@@ -705,7 +705,7 @@
 .container4
 {
 	position: relative;
-	width: 400px;
+	width: 700px;
 	background: rgb(247, 247, 247);
 	text-align: center;
 	vertical-align: middle;
@@ -713,13 +713,13 @@
 }
 .sad
 {
-	width: 100px;
+	width: 200px;
 }
 .text4
 {
-	padding-top: 20px;
+	padding-top: 30px;
 	color: black;
-	font-size: 20px;
+	font-size: 40px;
 }
 @media (max-width: 1000px) {
 	body {
