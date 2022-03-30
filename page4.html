@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Modules Description</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section class="sections">
+      <div class="container2">
+        <div class="parent2">
+        <div class="topbuttons">
+          <ul class="modules">
+            <li class="modbut" id="module1">MODULE 1</li>
+            <li class="modbut1" id="module2">MODULE 2</li>
+            <li class="modbut" id="module3">MODULE 3</li>
+          </ul>
+          <ul class="modules1">
+            <li class="modbut1" id="module4">MODULE 4</li>
+            <li class="modbut" id="module5">MODULE 5</li>
+            <li class="modbut1" id="module6">MODULE 6</li>
+          </ul>
+        </div>
+        <div class="name">
+          <div id="modulename" class="modulename">l</div>
+        </div>
+        <div class="content1"><div id="content" class="content">Press the button to see a brief description of the module!</div></div>
+      </div>
+      </div>
+    </section>
+    <a href="page3.html"><img class="iconleft" src="photos/leftarrowblack.png" alt=""></a>
+    <div class="ttt">
+      <a href="https://discord.gg/TF2ZqXj7"><img class="rrr" src="photos/discord.png" alt=""></a>
+      <a href="https://twitter.com/subquerynetwork"><img class="rrr" src="photos/twitter.png" alt=""></a>
+      <a href="https://t.me/subquerynetwork"><img class="rrr" src="photos/telegram.png" alt=""></a>
+      <a href="https://www.youtube.com/SubQueryNetwork"><img class="rrr" src="photos/youtube.png" alt=""></a>
+      <a href="https://medium.com/@subquery"><img class="rrr" src="photos/medium.png" alt=""></a>
+      <a href="https://github.com/OnFinality-io/subql"><img class="rrr" src="photos/github.png" alt=""></a>
+      <a href="https://www.linkedin.com/company/subquery"><img class="rrr" src="photos/linkedin.png" alt=""></a>
+    </div>
+    <script>
+      const module1 = document.getElementById('module1');
+      const module2 = document.getElementById('module2');
+      const module3 = document.getElementById('module3');
+      const module4 = document.getElementById('module4');
+      const module5 = document.getElementById('module5');
+      const module6 = document.getElementById('module6');
+      const modulename = document.getElementById('modulename');
+      const content = document.getElementById('content');
+
+      module1.addEventListener('click', event => {
+        modulename.style = "opacity: 0";
+        content.style = "opacity: 0";
+        function change() {
+        modulename.textContent = "Module 1 — Getting Started";
+        content.textContent = "Checking the prerequisites to the environment. Creating a Hello World quick start-up project along with studying the basic commands of the terminal. Running your first dApp with Docker and querying data from it on the playground.";
+        modulename.style = "opacity: 1";
+        content.style = "opacity: 1";
+        }
+        setTimeout(change, 1000);
+      });
+      module2.addEventListener('click', event => {
+        modulename.style = "opacity: 0";
+        content.style = "opacity: 0";
+        function change() {
+        modulename.textContent = "Module 2 — SubQuery Basics";
+        content.textContent = "Acquaintance with the manifest, schema, and mapping files. Learning how to work with filters and change the start block. Getting knowledge of what data can be extracted from a substrate chain using a block handler, about indexing all transactions in Polkadot, Event and Call Handlers.";
+        modulename.style = "opacity: 1";
+        content.style = "opacity: 1";
+        }
+        setTimeout(change, 1000);
+      });
+      module3.addEventListener('click', event => {
+        modulename.style = "opacity: 0";
+        content.style = "opacity: 0";
+        function change() {
+        modulename.textContent = "Module 3 — Relationships";
+        content.textContent = "Exploring different types of data relationships in SubQuery. Learning the one-to-many relationships on the example of the account transfer project. Understanding how many-to-many relationships work by creating the project to query the council proposals (related to the Polkadot governance structure). Acquaintance with the reverse lookups.";
+        modulename.style = "opacity: 1";
+        content.style = "opacity: 1";
+        }
+        setTimeout(change, 1000);
+      });
+      module4.addEventListener('click', event => {
+        modulename.style = "opacity: 0";
+        content.style = "opacity: 0";
+        function change() {
+        modulename.textContent = "Module 4 — Aggregation and Event Calls";
+        content.textContent = "Gaining knowledge on how to aggregate data in SubQuery on the example of indexing rewards for staking, aggregating them for a particular account, and in effect, determining how much reward an account has accumulated over time. Understanding how to adjust GraphQL schema, manifest, and mappings file to fit the new model. Looking deeper into the playground features.";
+        modulename.style = "opacity: 1";
+        content.style = "opacity: 1";
+        }
+        setTimeout(change, 1000);
+      });
+      module5.addEventListener('click', event => {
+        modulename.style = "opacity: 0";
+        content.style = "opacity: 0";
+        function change() {
+        modulename.textContent = "Module 5 — SubQuery Projects & SubQuery Explorer";
+        content.textContent = "Acquaintance with SubQuery Project online hosting and SubQuery Explorer. Deploying your own solution to SubQuery Project: configuring the Github, overriding the default network or dictionary endpoints with another network, understanding deployment slots. Exploring the projects in SubQuery Explorer, learning the ways to understand what the project does: using the open-source code and checking the schema, and using documentation explorer.";
+        modulename.style = "opacity: 1";
+        content.style = "opacity: 1";
+        }
+        setTimeout(change, 1000);
+      });
+      module6.addEventListener('click', event => {
+        modulename.style = "opacity: 0";
+        content.style = "opacity: 0";
+        function change() {
+        modulename.textContent = "Module 6 — Tips & Tricks";
+        content.textContent = "Learning some tips and tricks on logging, debugging, using handlers, getting events and extrinsic names. Understanding the “type safe” properties. Learning in which cases it’s better to change the starting block and batch block size and how to do it easily.";
+        modulename.style = "opacity: 1";
+        content.style = "opacity: 1";
+        }
+        setTimeout(change, 1000);
+      });
+    </script>
+        <script>
+          const devices = new RegExp('Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini', "i");
+    
+          if (devices.test(navigator.userAgent))
+          {
+            window.location.pathname = '/home/artemon/Downloads/SubQuery/errorpage.html'
+          }
+          else
+          {
+          }
+     </script>
+  </body>
+</html>
