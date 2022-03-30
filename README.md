@@ -1,1 +1,1 @@
-# SubQuery
+# SubQuery Hero Course
